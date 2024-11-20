@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Register.css";
 
 const PaymentForm = () => {
   const [name, setName] = useState("");
@@ -36,7 +37,9 @@ const PaymentForm = () => {
   };
 
   return (
+    <div className="Register_body">
     <form onSubmit={handleSubmit}>
+    <h1 className="heading">Registration form</h1>
       <input
         type="text"
         placeholder="Name"
@@ -60,6 +63,7 @@ const PaymentForm = () => {
       />
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 

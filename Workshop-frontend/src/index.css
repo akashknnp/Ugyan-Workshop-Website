@@ -20,7 +20,7 @@
   font-size: 5.3vw;
   margin-top: 2vh;
   margin-right: 30vw;
-  letter-spacing:0.5vh;
+  /* letter-spacing:0.5vh; */
   /* background-color: rgb(185, 169, 22); */
   padding: 0.5vh 1vw;
   text-shadow: 10px 5px 10px rgb(26, 26, 22);
@@ -37,8 +37,8 @@ body{
   
 }
 .logo-img{
-  height:25vh;
-  width:20vw;
+  height:28vh;
+  width:25vw;
   object-fit: cover;
   margin-left: 1vw;
   margin-bottom: 4vh;
@@ -149,7 +149,9 @@ body{
   font-weight: 500;
   font-size: 3vw;
   margin-right: 29vw;
-  color:white
+  color:white;
+  margin-top: 1.5vw;
+  
 }
 .footer{
   display: flex;
@@ -240,15 +242,18 @@ body{
     }
   
     .logo-img {
-      width: 25vw;
+      width:35vw;
+      margin-left: 1vw;
       height: auto;
       margin: 0;
       margin-top: 1vh;
     }
   
     .vlsi > p {
-      font-size: 7.9vw;
-      margin: 0vh 0;
+      font-size: 9vw;
+      width: 70vw;
+      margin-left: 6vw;
+      
       font-weight: 500;
       
     }
@@ -256,6 +261,8 @@ body{
     .background-div {
       height: 250vh;
       padding: 2vh;
+      background-image: none;
+      background-color: rgb(10, 10, 66);
     }
   
     .description {
@@ -285,7 +292,7 @@ body{
       height: auto;
       margin-top: 0vh;
       margin-left: 0.2vh;
-      box-shadow: -10px 15px 10px rgb(71, 69, 69);
+      box-shadow: -10px 15px 10px rgb(29, 28, 28);
     }
 
   
@@ -365,7 +372,7 @@ body{
       width:100%;
       left:0;
       height:9vh;
-      background-color: rgb(180, 180, 72);
+      
       z-index:100;
     }
   
@@ -391,8 +398,9 @@ body{
     }
   
     .register-link {
-      font-size: 5vw;
-      padding: 2vh 0;
+      font-size: 3.5vw;
+      padding: 1vh  ;
+      font-weight: 500;
     }
   }
   
