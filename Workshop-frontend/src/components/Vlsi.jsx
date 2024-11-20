@@ -6,6 +6,7 @@ import { IoTimeOutline } from "react-icons/io5";
 import { RiLiveLine } from "react-icons/ri";
 import { GiSandsOfTime } from "react-icons/gi";
 import { useNavigate } from 'react-router-dom';
+import pop from "../assets/popup.jpg";
 
 const Vlsi = () => {
   const navigate = useNavigate();
@@ -105,11 +106,14 @@ const Vlsi = () => {
           <p className="money-price">Rs. 299</p>
         </div>
         <div className="offer-end">
-          <p>Offer Ends In:</p> <span>{formatTime(time)}</span>
+          <p>Offer Ends In:</p> <span className='timer1'>{formatTime(time)}</span>
         </div>
         <div className="any-class" onClick={gotoregister}>
           <p className="register-link">Click to Register</p>
         </div>
+      </div>
+      <div>
+        <img className="popup" src={pop} alt="Logo" />  
       </div>
     </div>
   );

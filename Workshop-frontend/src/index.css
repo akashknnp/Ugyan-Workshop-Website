@@ -179,7 +179,7 @@ body{
   padding-bottom: 2vw;
 }
 .money-real{
-  color: white;
+  color: rgb(65, 254, 3);
   font-size: 3.5vh;
   margin: 0;
   font-weight: 500;
@@ -193,6 +193,9 @@ body{
 .offer-end{
   text-align: center;
   font-size: 1.5vw;
+}
+.timer1{
+  color:rgb(253, 233, 8);
 }
 .offer-end p{
   margin: 0;
@@ -216,7 +219,31 @@ body{
   justify-content: center; /* Horizontally center content inside parent div */
   height: 100vh; /* Adjust as needed or set a specific height */
 }
-
+.popup{
+  
+  position: fixed;
+  top:40vh;
+  right:2vw;
+  width:12vw;
+  height:12vw;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: -10px 10px 10px black;
+  opacity: 0;
+  animation: popup 1.2s infinite;
+}
+@keyframes popup{
+  
+    0%, 100% {
+      opacity: 1; /* Image is visible */
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      opacity: 0; /* Image is hidden */
+      transform: scale(1); /* Slightly smaller size */
+    }
+  
+}
 
 
   @media (max-width: 575.98px) {
@@ -256,6 +283,19 @@ body{
       
       font-weight: 500;
       
+    }
+    .popup{
+  
+      position: fixed;
+      top:80vh;
+      right:3vw;
+      width:20vw;
+      height:20vw;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: -10px 10px 10px black;
+      opacity: 0;
+      animation: popup 1.2s infinite;
     }
   
     .background-div {
@@ -387,7 +427,8 @@ body{
   
     .money-real {
       font-size: 4vw;
-    }
+      color:rgb(65, 254, 3);
+   }
   
     .money-price {
       font-size: 3vw;

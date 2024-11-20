@@ -1,7 +1,8 @@
 /* General body styling */
 .Register_body{
   font-family: Arial, sans-serif;
-  background-color:white;
+  /* background-color:white; */
+  background-image: url(../src/assets/background1.png);
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,13 +13,14 @@
 
 /* Form container */
 form {
-  background-color: gray;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
   justify-content: center;
+  border:2px solid rgb(10, 196, 233);
 }
 
 /* Input fields */
@@ -39,15 +41,15 @@ input[type="tel"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus {
-  border-color: gold;
+  border-color: rgb(0, 0, 94);
 }
 
 /* Submit button */
-button[type="submit"] {
-  width: 30%;
-  margin-left: 12vw;
-  padding: 10px;
-  background-color: #007bff;
+.submit{
+  width: 25%;
+  /* margin-left: 12vw;
+  padding: 10px; */
+  background-color: #183457;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
@@ -55,6 +57,25 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  height:6vh
+}
+.camel{
+  width: 25%;
+  /* margin-left: 12vw;
+  padding: 10px; */
+  background-color: #183457;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cancel-buttons{
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-between;
 }
 
 button[type="submit"]:hover {
@@ -69,10 +90,11 @@ form button {
 }
 .heading{
     text-align: center;
+    color:rgb(0, 0, 70)
 }
 @media (max-width: 575.98px) {
     form {
-        background-color: gray;
+        background-color: white;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -85,5 +107,34 @@ form button {
       .Register_body{
         height: 90vh;
       }
-    
+      /* Submit button */
+.submit{
+  width: 30%;
+  margin-left: 25vw;
+  padding: 10px;
+  background-color: #183457;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height:4.6vh;
+  transition: background-color 0.3s ease;
+}
+.camel{
+  width: 25%;
+  /* margin-left: 12vw;
+  padding: 10px; */
+  background-color: #183457;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height:4.6vh;
+  transition: background-color 0.3s ease;
+}
+
 }

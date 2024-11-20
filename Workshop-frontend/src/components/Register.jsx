@@ -6,6 +6,10 @@ const PaymentForm = () => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
+  const gotohome = () => {
+    window.location.href = "/";
+  };
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -61,7 +65,10 @@ const PaymentForm = () => {
         onChange={(e) => setPhoneNumber(e.target.value)}
         required
       />
-      <button type="submit">Submit</button>
+      <div className="cancel-buttons">
+        <button onClick={gotohome} className="camel">Back</button>
+        <button type="submit" className="submit">Submit</button>
+      </div>
     </form>
     </div>
   );
